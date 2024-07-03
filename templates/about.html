@@ -1,6 +1,8 @@
-{% {% extends "base.html" %}%}
+{% extends 'base.html' %}
 
-{% block title %} Блок О Сайте {%endblock%} 
+{% block title %}О сайте{% endblock %}
 
-{% block content %} Блок Контент {% endblock %}
-
+{% block content %}
+<h1>О сайте</h1>
+<p>Пользователей <i class="bi bi-clipboard-check"></i> {{ users_count }}</p>
+{% endblock %}

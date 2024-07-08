@@ -108,7 +108,7 @@ def blog_catalog(request):
         "posts": posts,
         "page_alias": "blog_catalog",
     }
-    return render(request, "blog/blog_catalog.html", context)
+    return render(request, "python_blog/blog_catalog.html", context)
 
 
 def index(request):

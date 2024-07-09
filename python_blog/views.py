@@ -4,7 +4,7 @@ USERS_COUNT = 10
 
 menu = [
     {"name": "Главная", "alias": "main"},
-    {"name": "Блог", "alias": "blog_catalog"},
+    {"name": "Блог", "alias": "blog"},
     {"name": "О проекте", "alias": "about"},
 ]
 
@@ -106,9 +106,9 @@ def blog_catalog(request):
     context = {
         "menu": menu,
         "posts": posts,
-        "page_alias": "blog_catalog",
+        "page_alias": "blog",
     }
-    return render(request, "python_blog/blog_catalog.html", context)
+    return render(request, "python_blog/blog.html", context)
 
 
 def index(request):
